@@ -100,6 +100,9 @@ class _MyAppState extends State<MyApp> {
                         Text(
                             'Hurray You Won The Lottery\nYour number match with lottery number\nThe number is "$ste"',
                             textAlign: TextAlign.center),
+                        const SizedBox(
+                          height: 10,
+                        ),
                         const Image(
                           image: NetworkImage(
                               'https://www.mememaker.net/static/images/memes/4694521.jpg'),
@@ -119,9 +122,12 @@ class _MyAppState extends State<MyApp> {
                         Text(
                             'Better Luck Next Time Your Number was $rand\nTry again',
                             textAlign: TextAlign.center),
+                        const SizedBox(
+                          height: 10,
+                        ),
                         const Image(
-                          image: NetworkImage(
-                              'https://i.imgflip.com/3u04h5.jpg'),
+                          image:
+                              NetworkImage('https://i.imgflip.com/3u04h5.jpg'),
                           height: 100,
                           width: 150,
                         )
@@ -142,4 +148,3 @@ class _MyAppState extends State<MyApp> {
     );
   }
 }
-
