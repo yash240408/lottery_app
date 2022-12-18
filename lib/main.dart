@@ -3,45 +3,9 @@ import 'dart:math';
 
 void main() {
   runApp(const MyApp());
+  
 }
 
-// class MyApp extends StatefulWidget {
-//   const MyApp({Key? key}) : super(key: key);
-//   @override
-//   State<MyApp> createState() => _MyAppState();
-// }
-
-// class _MyAppState extends State<MyApp> {
-//   int x = 0;
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       debugShowCheckedModeBanner: false,
-//       home: Scaffold(
-//         appBar: AppBar(
-//           title: Center(child: Text('Hello', style: TextStyle(color: Color.fromARGB(255, 255, 0, 0), fontWeight: FontWeight.w900), )),
-//           backgroundColor: Colors.blue.shade200,
-//         ),
-//         body: SafeArea(
-//             child: Center(
-//                 child: Text(
-//           x.toString(),
-//           style: TextStyle(fontSize: 25),
-//         ))),
-//         floatingActionButton: FloatingActionButton(
-//           onPressed: () {
-//             x++;
-//             setState(() {});
-//           },
-//           hoverColor: Colors.pink,
-//           splashColor: Colors.amber,
-//           focusColor: Colors.black,
-//           child: Icon(Icons.add),
-//         ),
-//       ),
-//     );
-//   }
-// }
 
 class MyApp extends StatefulWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -57,6 +21,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           title: Center(
@@ -105,7 +70,7 @@ class _MyAppState extends State<MyApp> {
                         ),
                         const Image(
                           image: NetworkImage(
-                              'https://www.mememaker.net/static/images/memes/4694521.jpg'),
+                              'https://i.imgflip.com/74guki.jpg'),
                           height: 100,
                           width: 150,
                         )
@@ -139,7 +104,7 @@ class _MyAppState extends State<MyApp> {
         floatingActionButton: FloatingActionButton(
           onPressed: () {
             setState(() {
-              rand = random.nextInt(25).toInt();
+              rand = random.nextInt(26).toInt();
             });
           },
           child: const Icon(Icons.refresh_outlined),
