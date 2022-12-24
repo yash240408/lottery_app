@@ -37,6 +37,8 @@ samples, guidance on mobile development, and a full API reference.
 ##  Technologies Used:
 - [Flutter](https://flutter.dev/) : Intitially this is made in flutter we will roll this out in other languages in future.
 - [Dart](https://dart.dev/): Automatically converts dart code into HTML/CSS/JS as needed for deployer.
+- [Swift](https://docs.swift.org/swift-book/):Please refer the official docs for swift.
+- [C++](https://en.cppreference.com/w/c/language): The documentation has been linked for viewers to check.
 
 <!-- CONTACT -->
 ## Contact
